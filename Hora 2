@@ -1,0 +1,113 @@
+
+public class Hora2 {
+	private int hora;
+
+	private int minuto;
+
+	private int segundo;
+
+	
+
+	public Hora2() {
+
+		this(0, 0, 0);
+
+	}
+
+	
+
+	public Hora2(int hora){
+
+		this(hora, 0, 0);
+
+	}
+
+	
+
+	public Hora2(int hora, int minuto) {
+
+		this(hora, minuto, 0);
+
+	}
+
+	
+
+	public Hora2(int hora, int minuto, int segundo) {
+
+		if ( hora < 0 || hora >= 24)
+
+			throw new IllegalArgumentException("A hora deve estar entre 0-23");
+
+		
+
+		if (minuto < 0 || minuto >= 60)
+
+	        throw new IllegalArgumentException("minute must be 0-59");
+
+
+
+		if (segundo < 0 || segundo >= 60)
+
+		    throw new IllegalArgumentException("second must be 0-59");
+
+		
+
+			 this.hora = hora;
+
+			 this.minuto = minuto;
+
+			 this.segundo = segundo;
+
+	
+
+			 public Hora2(Hora2 hora){
+
+				 this(hora.getHora(), hora.getMinuto(), hora.getSegundo());
+
+			 }
+
+			 
+
+			 
+
+			 public void setHora(int hora, int minuto, int segundo)
+
+			 {
+
+
+
+			     if (hora < 0 || hora >= 24)
+
+			       throw new IllegalArgumentException("hour must be 0-23");
+
+
+
+			     if (minuto < 0 || minuto >= 60)
+
+				   throw new IllegalArgumentException("minute must be 0-59");
+
+			     
+
+				 if (segundo < 0 || segundo >= 60)
+
+				   throw new IllegalArgumentException("second must be 0-59");
+
+				 
+
+				  this.hour = hour;
+
+				  this.minute = minute;
+
+				  this.second = second;
+
+				  
+
+			 }
+
+	}
+
+	
+
+}
+
+
