@@ -1,0 +1,25 @@
+
+public class Data {
+		private int mes;
+
+		private int dia;
+
+		private int ano;
+
+		
+
+		private static final int[] DiasPorMes =
+
+			{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+		
+
+		public Data(int mes, int dia, int ano)
+
+		{
+
+			if ( mes<= )
+
+		}
+
+	}
